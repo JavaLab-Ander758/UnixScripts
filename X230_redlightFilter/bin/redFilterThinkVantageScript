@@ -1,0 +1,10 @@
+#!/bin/bash
+
+touch /home/ander758/bin/redlight_state
+
+if grep running /home/ander758/bin/redlight_state
+	then xcalib -clear
+	echo stopped > /home/ander758/bin/redlight_state
+else xcalib -green .1 0 1 -blue .1 0 1 -alter
+	echo running > /home/ander758/bin/redlight_state
+fi

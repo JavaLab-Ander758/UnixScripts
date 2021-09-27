@@ -7,7 +7,6 @@ alias killswitchon='nordvpn set killswitch enable';
 alias killswitchoff='nordvpn set killswitch disable';
 
 ## Cisco AnyConnect 
-alias vpnUiT='sudo openconnect vpn.uit.no'
 
 ## bluetooth headset ##
 	## H.ear on 2 ##
@@ -38,5 +37,3 @@ alias filesInCurDir='find . -type f | wc -l'
 alias suspendPc='systemctl suspend';
 alias setdp-1ToAuto='xrandr --output DP-1 --auto'
 alias mkdirTimestamp="mkdir '$(date +'%Y-%m-%d %H_%M')';"
-
-
